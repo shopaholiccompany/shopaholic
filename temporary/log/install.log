@@ -1,0 +1,26 @@
+2011-05-16T16:50:18+00:00 WARN (4): exception 'Engine_Package_Manager_Exception' with message 'Unable to decode response body: array (
+  'responseStatus' => 200,
+)' in /home/dmytro/project/shop/socialengine_4.0.4/application/libraries/Engine/Package/Manager/Repository.php:430
+Stack trace:
+#0 /home/dmytro/project/shop/socialengine_4.0.4/application/libraries/Engine/Package/Manager/Repository.php(235): Engine_Package_Manager_Repository->_processResponse('{"responseStatu...')
+#1 /home/dmytro/project/shop/socialengine_4.0.4/install/controllers/ManageController.php(118): Engine_Package_Manager_Repository->queryList()
+#2 /home/dmytro/project/shop/socialengine_4.0.4/application/libraries/Zend/Controller/Action.php(513): ManageController->indexAction()
+#3 /home/dmytro/project/shop/socialengine_4.0.4/application/libraries/Zend/Controller/Dispatcher/Standard.php(289): Zend_Controller_Action->dispatch('indexAction')
+#4 /home/dmytro/project/shop/socialengine_4.0.4/application/libraries/Zend/Controller/Front.php(946): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#5 /home/dmytro/project/shop/socialengine_4.0.4/application/libraries/Zend/Application/Bootstrap/Bootstrap.php(77): Zend_Controller_Front->dispatch()
+#6 /home/dmytro/project/shop/socialengine_4.0.4/application/libraries/Zend/Application.php(358): Zend_Application_Bootstrap_Bootstrap->run()
+#7 /home/dmytro/project/shop/socialengine_4.0.4/install/index.php(74): Zend_Application->run()
+#8 {main}
+2011-05-16T16:50:51+00:00 WARN (4): exception 'Engine_Package_Manager_Exception' with message 'Unable to decode response body: array (
+  'responseStatus' => 200,
+)' in /home/dmytro/project/shop/socialengine_4.0.4/application/libraries/Engine/Package/Manager/Repository.php:430
+Stack trace:
+#0 /home/dmytro/project/shop/socialengine_4.0.4/application/libraries/Engine/Package/Manager/Repository.php(235): Engine_Package_Manager_Repository->_processResponse('{"responseStatu...')
+#1 /home/dmytro/project/shop/socialengine_4.0.4/install/controllers/ManageController.php(118): Engine_Package_Manager_Repository->queryList()
+#2 /home/dmytro/project/shop/socialengine_4.0.4/application/libraries/Zend/Controller/Action.php(513): ManageController->indexAction()
+#3 /home/dmytro/project/shop/socialengine_4.0.4/application/libraries/Zend/Controller/Dispatcher/Standard.php(289): Zend_Controller_Action->dispatch('indexAction')
+#4 /home/dmytro/project/shop/socialengine_4.0.4/application/libraries/Zend/Controller/Front.php(946): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#5 /home/dmytro/project/shop/socialengine_4.0.4/application/libraries/Zend/Application/Bootstrap/Bootstrap.php(77): Zend_Controller_Front->dispatch()
+#6 /home/dmytro/project/shop/socialengine_4.0.4/application/libraries/Zend/Application.php(358): Zend_Application_Bootstrap_Bootstrap->run()
+#7 /home/dmytro/project/shop/socialengine_4.0.4/install/index.php(74): Zend_Application->run()
+#8 {main}

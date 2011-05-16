@@ -1,0 +1,38 @@
+2011-05-16T16:51:02+00:00 NOTICE (5): Trigger Check: 1374965618
+2011-05-16T16:51:02+00:00 NOTICE (5): Trigger Pass: 1374965618
+2011-05-16T16:51:02+00:00 NOTICE (5): Execution Check: 2147483647
+2011-05-16T16:51:11+00:00 NOTICE (5): Trigger Check: 982785269
+2011-05-16T16:51:18+00:00 NOTICE (5): Trigger Check: 2147483647
+2011-05-16T16:51:19+00:00 NOTICE (5): Trigger Check: 1292928971
+2011-05-16T16:51:20+00:00 NOTICE (5): Trigger Check: 2064258751
+2011-05-16T16:53:19+00:00 NOTICE (5): Trigger Check: 1073527345
+2011-05-16T16:53:19+00:00 NOTICE (5): Trigger Pass: 1073527345
+2011-05-16T16:53:19+00:00 NOTICE (5): Execution Check: 79503486
+2011-05-16T16:53:19+00:00 NOTICE (5): Execution Pass: 79503486
+2011-05-16T16:53:19+00:00 NOTICE (5): Task Execution Check: Background Mailer
+2011-05-16T16:53:19+00:00 NOTICE (5): Task Execution Pass: Background Mailer
+2011-05-16T16:53:19+00:00 NOTICE (5): Task Execution Complete: Background Mailer
+2011-05-16T16:53:19+00:00 NOTICE (5): Task Execution Check: Statistics
+2011-05-16T16:53:19+00:00 NOTICE (5): Task Execution Pass: Statistics
+2011-05-16T16:53:20+00:00 NOTICE (5): Trigger Check: 2147483647
+2011-05-16T16:53:21+00:00 NOTICE (5): Task Execution Complete: Statistics
+2011-05-16T16:53:21+00:00 NOTICE (5): Task Execution Check: Member Data Maintenance
+2011-05-16T16:53:21+00:00 NOTICE (5): Task Execution Pass: Member Data Maintenance
+2011-05-16T16:53:21+00:00 NOTICE (5): Task Execution Complete: Member Data Maintenance
+2011-05-16T16:53:21+00:00 NOTICE (5): Execution Complete: 79503486
+2011-05-16T16:55:19+00:00 NOTICE (5): Trigger Check: 109416127
+2011-05-16T16:55:19+00:00 NOTICE (5): Trigger Pass: 109416127
+2011-05-16T16:55:19+00:00 NOTICE (5): Execution Check: 655880723
+2011-05-16T16:55:20+00:00 NOTICE (5): Trigger Check: 2147483647
+2011-05-16T16:57:19+00:00 NOTICE (5): Trigger Check: 1134721514
+2011-05-16T16:57:19+00:00 NOTICE (5): Trigger Pass: 1134721514
+2011-05-16T16:57:19+00:00 NOTICE (5): Execution Check: 376843918
+2011-05-16T16:57:19+00:00 NOTICE (5): Execution Pass: 376843918
+2011-05-16T16:57:19+00:00 NOTICE (5): Task Execution Check: Background Mailer
+2011-05-16T16:57:19+00:00 NOTICE (5): Task Execution Pass: Background Mailer
+2011-05-16T16:57:19+00:00 NOTICE (5): Task Execution Complete: Background Mailer
+2011-05-16T16:57:19+00:00 NOTICE (5): Task Execution Check: Member Data Maintenance
+2011-05-16T16:57:19+00:00 NOTICE (5): Task Execution Pass: Member Data Maintenance
+2011-05-16T16:57:19+00:00 NOTICE (5): Task Execution Complete: Member Data Maintenance
+2011-05-16T16:57:19+00:00 NOTICE (5): Execution Complete: 376843918
+2011-05-16T16:57:20+00:00 NOTICE (5): Trigger Check: 1227210035
