@@ -1,0 +1,1 @@
+INSERT IGNORE INTO `engine4_core_modules` (`name`, `title`, `description`, `version`, `enabled`, `type`) VALUES  ('cabinet', 'cabinet', 'cabinet - это модуль шкафа в который и будут пропадать все покупки.', '4.0.0', 1, 'extra') ;

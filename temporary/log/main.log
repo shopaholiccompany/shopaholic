@@ -1,3 +1,389 @@
 2011-05-16T16:51:01+00:00 DEBUG (7): Require class Core_Controller_Action_Helper_RequireAdmin failed check for: core.admin-index.index
 2011-05-16T16:51:01+00:00 DEBUG (7): Require class Core_Controller_Action_Helper_RequireUser failed check for: core.admin-index.index
 2011-05-16T16:51:01+00:00 DEBUG (7): Require class Core_Controller_Action_Helper_RequireUser failed check for: core.error.requireuser
+2011-05-20T11:45:39+00:00 CRIT (2): exception 'Zend_Controller_Dispatcher_Exception' with message 'Invalid controller specified (install)' in /home/dmytro/project/shop/shopaholic/application/libraries/Zend/Controller/Dispatcher/Standard.php:242
+Stack trace:
+#0 /home/dmytro/project/shop/shopaholic/application/libraries/Zend/Controller/Front.php(946): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/dmytro/project/shop/shopaholic/application/modules/Core/Bootstrap.php(67): Zend_Controller_Front->dispatch()
+#2 /home/dmytro/project/shop/shopaholic/application/libraries/Engine/Application.php(99): Core_Bootstrap->run()
+#3 /home/dmytro/project/shop/shopaholic/application/index.php(187): Engine_Application->run()
+#4 /home/dmytro/project/shop/shopaholic/index.php(15): include('/home/dmytro/pr...')
+#5 {main}
+2011-05-20T11:46:03+00:00 CRIT (2): exception 'Zend_Controller_Dispatcher_Exception' with message 'Invalid controller specified (install)' in /home/dmytro/project/shop/shopaholic/application/libraries/Zend/Controller/Dispatcher/Standard.php:242
+Stack trace:
+#0 /home/dmytro/project/shop/shopaholic/application/libraries/Zend/Controller/Front.php(946): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/dmytro/project/shop/shopaholic/application/modules/Core/Bootstrap.php(67): Zend_Controller_Front->dispatch()
+#2 /home/dmytro/project/shop/shopaholic/application/libraries/Engine/Application.php(99): Core_Bootstrap->run()
+#3 /home/dmytro/project/shop/shopaholic/application/index.php(187): Engine_Application->run()
+#4 /home/dmytro/project/shop/shopaholic/index.php(15): include('/home/dmytro/pr...')
+#5 {main}
+2011-05-20T12:00:32+00:00 WARN (4): Unknown timestamp format:  (boolean) 
+2011-05-20T12:12:11+00:00 CRIT (2): exception 'Zend_Controller_Dispatcher_Exception' with message 'Invalid controller specified (install)' in /home/dmytro/project/shop/shopaholic/application/libraries/Zend/Controller/Dispatcher/Standard.php:242
+Stack trace:
+#0 /home/dmytro/project/shop/shopaholic/application/libraries/Zend/Controller/Front.php(946): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/dmytro/project/shop/shopaholic/application/modules/Core/Bootstrap.php(67): Zend_Controller_Front->dispatch()
+#2 /home/dmytro/project/shop/shopaholic/application/libraries/Engine/Application.php(99): Core_Bootstrap->run()
+#3 /home/dmytro/project/shop/shopaholic/application/index.php(187): Engine_Application->run()
+#4 /home/dmytro/project/shop/shopaholic/index.php(15): include('/home/dmytro/pr...')
+#5 {main}
+2011-05-20T12:14:11+00:00 WARN (4): exception 'Engine_Content_Widget_Exception' with message 'Action "admin" does not exist in widget "Core_Widget_MenuMainController"' in /home/dmytro/project/shop/shopaholic/application/libraries/Engine/Content/Widget/Abstract.php:214
+Stack trace:
+#0 /home/dmytro/project/shop/shopaholic/application/libraries/Engine/Content/Element/Widget.php(66): Engine_Content_Widget_Abstract->render('admin')
+#1 /home/dmytro/project/shop/shopaholic/application/libraries/Engine/Content/Element/Abstract.php(583): Engine_Content_Element_Widget->_render()
+#2 /home/dmytro/project/shop/shopaholic/application/libraries/Engine/Content/Decorator/Children.php(31): Engine_Content_Element_Abstract->render()
+#3 /home/dmytro/project/shop/shopaholic/application/libraries/Engine/Content/Element/Abstract.php(594): Engine_Content_Decorator_Children->render('')
+#4 /home/dmytro/project/shop/shopaholic/application/modules/Core/controllers/AdminContentController.php(427): Engine_Content_Element_Abstract->render()
+#5 /home/dmytro/project/shop/shopaholic/application/libraries/Zend/Controller/Action.php(513): Core_AdminContentController->widgetAction()
+#6 /home/dmytro/project/shop/shopaholic/application/libraries/Zend/Controller/Dispatcher/Standard.php(289): Zend_Controller_Action->dispatch('widgetAction')
+#7 /home/dmytro/project/shop/shopaholic/application/libraries/Zend/Controller/Front.php(946): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#8 /home/dmytro/project/shop/shopaholic/application/modules/Core/Bootstrap.php(67): Zend_Controller_Front->dispatch()
+#9 /home/dmytro/project/shop/shopaholic/application/libraries/Engine/Application.php(99): Core_Bootstrap->run()
+#10 /home/dmytro/project/shop/shopaholic/application/index.php(187): Engine_Application->run()
+#11 /home/dmytro/project/shop/shopaholic/index.php(15): include('/home/dmytro/pr...')
+#12 {main}
+2011-05-20T13:14:38+00:00 WARN (4): Unknown timestamp format:  (boolean) 
+2011-05-20T13:15:14+00:00 WARN (4): Unknown timestamp format:  (boolean) 
+2011-05-20T13:22:36+00:00 WARN (4): exception 'Engine_Image_Adapter_Exception' with message 'File "/home/dmytro/project/shop/shopaholic/public/temporary/219591_10150180097323674_694078673_6848888_5665830_o.jpg" is not an image or does not exist' in /home/dmytro/project/shop/shopaholic/application/libraries/Engine/Image/Adapter/Gd.php:62
+Stack trace:
+#0 /home/dmytro/project/shop/shopaholic/application/modules/User/Model/User.php(142): Engine_Image_Adapter_Gd->open('/home/dmytro/pr...')
+#1 /home/dmytro/project/shop/shopaholic/application/modules/User/controllers/EditController.php(145): User_Model_User->setPhoto(Object(Engine_Form_Element_File))
+#2 /home/dmytro/project/shop/shopaholic/application/libraries/Zend/Controller/Action.php(513): User_EditController->photoAction()
+#3 /home/dmytro/project/shop/shopaholic/application/libraries/Zend/Controller/Dispatcher/Standard.php(289): Zend_Controller_Action->dispatch('photoAction')
+#4 /home/dmytro/project/shop/shopaholic/application/libraries/Zend/Controller/Front.php(946): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#5 /home/dmytro/project/shop/shopaholic/application/modules/Core/Bootstrap.php(67): Zend_Controller_Front->dispatch()
+#6 /home/dmytro/project/shop/shopaholic/application/libraries/Engine/Application.php(99): Core_Bootstrap->run()
+#7 /home/dmytro/project/shop/shopaholic/application/index.php(187): Engine_Application->run()
+#8 /home/dmytro/project/shop/shopaholic/index.php(15): include('/home/dmytro/pr...')
+#9 {main}
+2011-05-20T13:32:05+00:00 DEBUG (7): Require class Core_Controller_Action_Helper_RequireAdmin failed check for: activity.admin-settings.general
+2011-05-20T13:32:05+00:00 DEBUG (7): Require class Core_Controller_Action_Helper_RequireUser failed check for: activity.admin-settings.general
+2011-05-20T13:32:05+00:00 DEBUG (7): Require class Core_Controller_Action_Helper_RequireUser failed check for: core.error.requireuser
+2011-05-20T13:33:29+00:00 ERR (3): exception 'Zend_Mail_Transport_Exception' with message 'Unable to send mail' in /home/dmytro/project/shop/shopaholic/application/libraries/Zend/Mail/Transport/Sendmail.php:105
+Stack trace:
+#0 /home/dmytro/project/shop/shopaholic/application/libraries/Zend/Mail/Transport/Abstract.php(348): Zend_Mail_Transport_Sendmail->_sendMail()
+#1 /home/dmytro/project/shop/shopaholic/application/libraries/Zend/Mail.php(973): Zend_Mail_Transport_Abstract->send(Object(Zend_Mail))
+#2 /home/dmytro/project/shop/shopaholic/application/modules/Core/Api/Mail.php(175): Zend_Mail->send(Object(Zend_Mail_Transport_Sendmail))
+#3 /home/dmytro/project/shop/shopaholic/application/modules/Core/Api/Mail.php(432): Core_Api_Mail->sendRaw(Object(Zend_Mail))
+#4 /home/dmytro/project/shop/shopaholic/application/modules/Core/Plugin/Task/Mail.php(211): Core_Api_Mail->sendSystemRaw(Array, 'core_verificati...', Array)
+#5 /home/dmytro/project/shop/shopaholic/application/modules/Core/Plugin/Task/Mail.php(77): Core_Plugin_Task_Mail->_processSystem(Object(Engine_Db_Table_Row))
+#6 /home/dmytro/project/shop/shopaholic/application/modules/Core/Plugin/Task/Mail.php(57): Core_Plugin_Task_Mail->_processOne()
+#7 /home/dmytro/project/shop/shopaholic/application/modules/Core/Model/DbTable/Tasks.php(620): Core_Plugin_Task_Mail->execute()
+#8 /home/dmytro/project/shop/shopaholic/application/modules/Core/Model/DbTable/Tasks.php(480): Core_Model_DbTable_Tasks->_executeTask(Object(Engine_Db_Table_Row))
+#9 /home/dmytro/project/shop/shopaholic/application/modules/Core/controllers/UtilityController.php(98): Core_Model_DbTable_Tasks->execute()
+#10 /home/dmytro/project/shop/shopaholic/application/libraries/Zend/Controller/Action.php(513): Core_UtilityController->tasksAction()
+#11 /home/dmytro/project/shop/shopaholic/application/libraries/Zend/Controller/Dispatcher/Standard.php(289): Zend_Controller_Action->dispatch('tasksAction')
+#12 /home/dmytro/project/shop/shopaholic/application/libraries/Zend/Controller/Front.php(946): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#13 /home/dmytro/project/shop/shopaholic/application/modules/Core/Bootstrap.php(67): Zend_Controller_Front->dispatch()
+#14 /home/dmytro/project/shop/shopaholic/application/libraries/Engine/Application.php(99): Core_Bootstrap->run()
+#15 /home/dmytro/project/shop/shopaholic/application/index.php(187): Engine_Application->run()
+#16 /home/dmytro/project/shop/shopaholic/index.php(15): include('/home/dmytro/pr...')
+#17 {main}
+2011-05-20T13:48:05+00:00 ERR (3): exception 'Zend_Mail_Transport_Exception' with message 'Unable to send mail' in /home/dmytro/project/shop/shopaholic/application/libraries/Zend/Mail/Transport/Sendmail.php:105
+Stack trace:
+#0 /home/dmytro/project/shop/shopaholic/application/libraries/Zend/Mail/Transport/Abstract.php(348): Zend_Mail_Transport_Sendmail->_sendMail()
+#1 /home/dmytro/project/shop/shopaholic/application/libraries/Zend/Mail.php(973): Zend_Mail_Transport_Abstract->send(Object(Zend_Mail))
+#2 /home/dmytro/project/shop/shopaholic/application/modules/Core/Api/Mail.php(175): Zend_Mail->send(Object(Zend_Mail_Transport_Sendmail))
+#3 /home/dmytro/project/shop/shopaholic/application/modules/Core/Api/Mail.php(432): Core_Api_Mail->sendRaw(Object(Zend_Mail))
+#4 /home/dmytro/project/shop/shopaholic/application/modules/Core/Plugin/Task/Mail.php(211): Core_Api_Mail->sendSystemRaw(Array, 'notify_friend_r...', Array)
+#5 /home/dmytro/project/shop/shopaholic/application/modules/Core/Plugin/Task/Mail.php(77): Core_Plugin_Task_Mail->_processSystem(Object(Engine_Db_Table_Row))
+#6 /home/dmytro/project/shop/shopaholic/application/modules/Core/Plugin/Task/Mail.php(57): Core_Plugin_Task_Mail->_processOne()
+#7 /home/dmytro/project/shop/shopaholic/application/modules/Core/Model/DbTable/Tasks.php(620): Core_Plugin_Task_Mail->execute()
+#8 /home/dmytro/project/shop/shopaholic/application/modules/Core/Model/DbTable/Tasks.php(480): Core_Model_DbTable_Tasks->_executeTask(Object(Engine_Db_Table_Row))
+#9 /home/dmytro/project/shop/shopaholic/application/modules/Core/controllers/UtilityController.php(98): Core_Model_DbTable_Tasks->execute()
+#10 /home/dmytro/project/shop/shopaholic/application/libraries/Zend/Controller/Action.php(513): Core_UtilityController->tasksAction()
+#11 /home/dmytro/project/shop/shopaholic/application/libraries/Zend/Controller/Dispatcher/Standard.php(289): Zend_Controller_Action->dispatch('tasksAction')
+#12 /home/dmytro/project/shop/shopaholic/application/libraries/Zend/Controller/Front.php(946): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#13 /home/dmytro/project/shop/shopaholic/application/modules/Core/Bootstrap.php(67): Zend_Controller_Front->dispatch()
+#14 /home/dmytro/project/shop/shopaholic/application/libraries/Engine/Application.php(99): Core_Bootstrap->run()
+#15 /home/dmytro/project/shop/shopaholic/application/index.php(177): Engine_Application->run()
+#16 /home/dmytro/project/shop/shopaholic/index.php(15): include('/home/dmytro/pr...')
+#17 {main}
+2011-05-20T13:57:29+00:00 ERR (3): exception 'Zend_Mail_Transport_Exception' with message 'Unable to send mail' in /home/dmytro/project/shop/shopaholic/application/libraries/Zend/Mail/Transport/Sendmail.php:105
+Stack trace:
+#0 /home/dmytro/project/shop/shopaholic/application/libraries/Zend/Mail/Transport/Abstract.php(348): Zend_Mail_Transport_Sendmail->_sendMail()
+#1 /home/dmytro/project/shop/shopaholic/application/libraries/Zend/Mail.php(973): Zend_Mail_Transport_Abstract->send(Object(Zend_Mail))
+#2 /home/dmytro/project/shop/shopaholic/application/modules/Core/Api/Mail.php(175): Zend_Mail->send(Object(Zend_Mail_Transport_Sendmail))
+#3 /home/dmytro/project/shop/shopaholic/application/modules/Core/Api/Mail.php(432): Core_Api_Mail->sendRaw(Object(Zend_Mail))
+#4 /home/dmytro/project/shop/shopaholic/application/modules/Core/Plugin/Task/Mail.php(211): Core_Api_Mail->sendSystemRaw(Array, 'core_welcome', Array)
+#5 /home/dmytro/project/shop/shopaholic/application/modules/Core/Plugin/Task/Mail.php(77): Core_Plugin_Task_Mail->_processSystem(Object(Engine_Db_Table_Row))
+#6 /home/dmytro/project/shop/shopaholic/application/modules/Core/Plugin/Task/Mail.php(57): Core_Plugin_Task_Mail->_processOne()
+#7 /home/dmytro/project/shop/shopaholic/application/modules/Core/Model/DbTable/Tasks.php(620): Core_Plugin_Task_Mail->execute()
+#8 /home/dmytro/project/shop/shopaholic/application/modules/Core/Model/DbTable/Tasks.php(480): Core_Model_DbTable_Tasks->_executeTask(Object(Engine_Db_Table_Row))
+#9 /home/dmytro/project/shop/shopaholic/application/modules/Core/controllers/UtilityController.php(98): Core_Model_DbTable_Tasks->execute()
+#10 /home/dmytro/project/shop/shopaholic/application/libraries/Zend/Controller/Action.php(513): Core_UtilityController->tasksAction()
+#11 /home/dmytro/project/shop/shopaholic/application/libraries/Zend/Controller/Dispatcher/Standard.php(289): Zend_Controller_Action->dispatch('tasksAction')
+#12 /home/dmytro/project/shop/shopaholic/application/libraries/Zend/Controller/Front.php(946): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#13 /home/dmytro/project/shop/shopaholic/application/modules/Core/Bootstrap.php(67): Zend_Controller_Front->dispatch()
+#14 /home/dmytro/project/shop/shopaholic/application/libraries/Engine/Application.php(99): Core_Bootstrap->run()
+#15 /home/dmytro/project/shop/shopaholic/application/index.php(177): Engine_Application->run()
+#16 /home/dmytro/project/shop/shopaholic/index.php(15): include('/home/dmytro/pr...')
+#17 {main}
+2011-05-20T13:57:29+00:00 ERR (3): exception 'Zend_Mail_Transport_Exception' with message 'Unable to send mail' in /home/dmytro/project/shop/shopaholic/application/libraries/Zend/Mail/Transport/Sendmail.php:105
+Stack trace:
+#0 /home/dmytro/project/shop/shopaholic/application/libraries/Zend/Mail/Transport/Abstract.php(348): Zend_Mail_Transport_Sendmail->_sendMail()
+#1 /home/dmytro/project/shop/shopaholic/application/libraries/Zend/Mail.php(973): Zend_Mail_Transport_Abstract->send(Object(Zend_Mail))
+#2 /home/dmytro/project/shop/shopaholic/application/modules/Core/Api/Mail.php(175): Zend_Mail->send(Object(Zend_Mail_Transport_Sendmail))
+#3 /home/dmytro/project/shop/shopaholic/application/modules/Core/Api/Mail.php(432): Core_Api_Mail->sendRaw(Object(Zend_Mail))
+#4 /home/dmytro/project/shop/shopaholic/application/modules/Core/Plugin/Task/Mail.php(211): Core_Api_Mail->sendSystemRaw(Array, 'notify_friend_r...', Array)
+#5 /home/dmytro/project/shop/shopaholic/application/modules/Core/Plugin/Task/Mail.php(77): Core_Plugin_Task_Mail->_processSystem(Object(Engine_Db_Table_Row))
+#6 /home/dmytro/project/shop/shopaholic/application/modules/Core/Plugin/Task/Mail.php(57): Core_Plugin_Task_Mail->_processOne()
+#7 /home/dmytro/project/shop/shopaholic/application/modules/Core/Model/DbTable/Tasks.php(620): Core_Plugin_Task_Mail->execute()
+#8 /home/dmytro/project/shop/shopaholic/application/modules/Core/Model/DbTable/Tasks.php(480): Core_Model_DbTable_Tasks->_executeTask(Object(Engine_Db_Table_Row))
+#9 /home/dmytro/project/shop/shopaholic/application/modules/Core/controllers/UtilityController.php(98): Core_Model_DbTable_Tasks->execute()
+#10 /home/dmytro/project/shop/shopaholic/application/libraries/Zend/Controller/Action.php(513): Core_UtilityController->tasksAction()
+#11 /home/dmytro/project/shop/shopaholic/application/libraries/Zend/Controller/Dispatcher/Standard.php(289): Zend_Controller_Action->dispatch('tasksAction')
+#12 /home/dmytro/project/shop/shopaholic/application/libraries/Zend/Controller/Front.php(946): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#13 /home/dmytro/project/shop/shopaholic/application/modules/Core/Bootstrap.php(67): Zend_Controller_Front->dispatch()
+#14 /home/dmytro/project/shop/shopaholic/application/libraries/Engine/Application.php(99): Core_Bootstrap->run()
+#15 /home/dmytro/project/shop/shopaholic/application/index.php(177): Engine_Application->run()
+#16 /home/dmytro/project/shop/shopaholic/index.php(15): include('/home/dmytro/pr...')
+#17 {main}
+2011-05-20T13:57:29+00:00 ERR (3): exception 'Zend_Mail_Transport_Exception' with message 'Unable to send mail' in /home/dmytro/project/shop/shopaholic/application/libraries/Zend/Mail/Transport/Sendmail.php:105
+Stack trace:
+#0 /home/dmytro/project/shop/shopaholic/application/libraries/Zend/Mail/Transport/Abstract.php(348): Zend_Mail_Transport_Sendmail->_sendMail()
+#1 /home/dmytro/project/shop/shopaholic/application/libraries/Zend/Mail.php(973): Zend_Mail_Transport_Abstract->send(Object(Zend_Mail))
+#2 /home/dmytro/project/shop/shopaholic/application/modules/Core/Api/Mail.php(175): Zend_Mail->send(Object(Zend_Mail_Transport_Sendmail))
+#3 /home/dmytro/project/shop/shopaholic/application/modules/Core/Api/Mail.php(432): Core_Api_Mail->sendRaw(Object(Zend_Mail))
+#4 /home/dmytro/project/shop/shopaholic/application/modules/Core/Plugin/Task/Mail.php(211): Core_Api_Mail->sendSystemRaw(Array, 'notify_friend_a...', Array)
+#5 /home/dmytro/project/shop/shopaholic/application/modules/Core/Plugin/Task/Mail.php(77): Core_Plugin_Task_Mail->_processSystem(Object(Engine_Db_Table_Row))
+#6 /home/dmytro/project/shop/shopaholic/application/modules/Core/Plugin/Task/Mail.php(57): Core_Plugin_Task_Mail->_processOne()
+#7 /home/dmytro/project/shop/shopaholic/application/modules/Core/Model/DbTable/Tasks.php(620): Core_Plugin_Task_Mail->execute()
+#8 /home/dmytro/project/shop/shopaholic/application/modules/Core/Model/DbTable/Tasks.php(480): Core_Model_DbTable_Tasks->_executeTask(Object(Engine_Db_Table_Row))
+#9 /home/dmytro/project/shop/shopaholic/application/modules/Core/controllers/UtilityController.php(98): Core_Model_DbTable_Tasks->execute()
+#10 /home/dmytro/project/shop/shopaholic/application/libraries/Zend/Controller/Action.php(513): Core_UtilityController->tasksAction()
+#11 /home/dmytro/project/shop/shopaholic/application/libraries/Zend/Controller/Dispatcher/Standard.php(289): Zend_Controller_Action->dispatch('tasksAction')
+#12 /home/dmytro/project/shop/shopaholic/application/libraries/Zend/Controller/Front.php(946): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#13 /home/dmytro/project/shop/shopaholic/application/modules/Core/Bootstrap.php(67): Zend_Controller_Front->dispatch()
+#14 /home/dmytro/project/shop/shopaholic/application/libraries/Engine/Application.php(99): Core_Bootstrap->run()
+#15 /home/dmytro/project/shop/shopaholic/application/index.php(177): Engine_Application->run()
+#16 /home/dmytro/project/shop/shopaholic/index.php(15): include('/home/dmytro/pr...')
+#17 {main}
+2011-05-20T14:05:31+00:00 ERR (3): exception 'Zend_Mail_Transport_Exception' with message 'Unable to send mail' in /home/dmytro/project/shop/shopaholic/application/libraries/Zend/Mail/Transport/Sendmail.php:105
+Stack trace:
+#0 /home/dmytro/project/shop/shopaholic/application/libraries/Zend/Mail/Transport/Abstract.php(348): Zend_Mail_Transport_Sendmail->_sendMail()
+#1 /home/dmytro/project/shop/shopaholic/application/libraries/Zend/Mail.php(973): Zend_Mail_Transport_Abstract->send(Object(Zend_Mail))
+#2 /home/dmytro/project/shop/shopaholic/application/modules/Core/Api/Mail.php(175): Zend_Mail->send(Object(Zend_Mail_Transport_Sendmail))
+#3 /home/dmytro/project/shop/shopaholic/application/modules/Core/Api/Mail.php(432): Core_Api_Mail->sendRaw(Object(Zend_Mail))
+#4 /home/dmytro/project/shop/shopaholic/application/modules/Core/Plugin/Task/Mail.php(211): Core_Api_Mail->sendSystemRaw(Array, 'notify_message_...', Array)
+#5 /home/dmytro/project/shop/shopaholic/application/modules/Core/Plugin/Task/Mail.php(77): Core_Plugin_Task_Mail->_processSystem(Object(Engine_Db_Table_Row))
+#6 /home/dmytro/project/shop/shopaholic/application/modules/Core/Plugin/Task/Mail.php(57): Core_Plugin_Task_Mail->_processOne()
+#7 /home/dmytro/project/shop/shopaholic/application/modules/Core/Model/DbTable/Tasks.php(620): Core_Plugin_Task_Mail->execute()
+#8 /home/dmytro/project/shop/shopaholic/application/modules/Core/Model/DbTable/Tasks.php(480): Core_Model_DbTable_Tasks->_executeTask(Object(Engine_Db_Table_Row))
+#9 /home/dmytro/project/shop/shopaholic/application/modules/Core/controllers/UtilityController.php(98): Core_Model_DbTable_Tasks->execute()
+#10 /home/dmytro/project/shop/shopaholic/application/libraries/Zend/Controller/Action.php(513): Core_UtilityController->tasksAction()
+#11 /home/dmytro/project/shop/shopaholic/application/libraries/Zend/Controller/Dispatcher/Standard.php(289): Zend_Controller_Action->dispatch('tasksAction')
+#12 /home/dmytro/project/shop/shopaholic/application/libraries/Zend/Controller/Front.php(946): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#13 /home/dmytro/project/shop/shopaholic/application/modules/Core/Bootstrap.php(67): Zend_Controller_Front->dispatch()
+#14 /home/dmytro/project/shop/shopaholic/application/libraries/Engine/Application.php(99): Core_Bootstrap->run()
+#15 /home/dmytro/project/shop/shopaholic/application/index.php(177): Engine_Application->run()
+#16 /home/dmytro/project/shop/shopaholic/index.php(15): include('/home/dmytro/pr...')
+#17 {main}
+2011-05-20T14:15:13+00:00 CRIT (2): exception 'Zend_Controller_Dispatcher_Exception' with message 'Invalid controller specified (install)' in /home/dmytro/project/shop/shopaholic/application/libraries/Zend/Controller/Dispatcher/Standard.php:242
+Stack trace:
+#0 /home/dmytro/project/shop/shopaholic/application/libraries/Zend/Controller/Front.php(946): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/dmytro/project/shop/shopaholic/application/modules/Core/Bootstrap.php(67): Zend_Controller_Front->dispatch()
+#2 /home/dmytro/project/shop/shopaholic/application/libraries/Engine/Application.php(99): Core_Bootstrap->run()
+#3 /home/dmytro/project/shop/shopaholic/application/index.php(177): Engine_Application->run()
+#4 /home/dmytro/project/shop/shopaholic/index.php(15): include('/home/dmytro/pr...')
+#5 {main}
+2011-05-20T14:15:44+00:00 CRIT (2): exception 'Zend_Controller_Dispatcher_Exception' with message 'Invalid controller specified (install)' in /home/dmytro/project/shop/shopaholic/application/libraries/Zend/Controller/Dispatcher/Standard.php:242
+Stack trace:
+#0 /home/dmytro/project/shop/shopaholic/application/libraries/Zend/Controller/Front.php(946): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/dmytro/project/shop/shopaholic/application/modules/Core/Bootstrap.php(67): Zend_Controller_Front->dispatch()
+#2 /home/dmytro/project/shop/shopaholic/application/libraries/Engine/Application.php(99): Core_Bootstrap->run()
+#3 /home/dmytro/project/shop/shopaholic/application/index.php(177): Engine_Application->run()
+#4 /home/dmytro/project/shop/shopaholic/index.php(15): include('/home/dmytro/pr...')
+#5 {main}
+2011-05-20T15:08:33+00:00 WARN (4): exception 'Engine_Content_Exception' with message 'Widget's module is not enabled or not installed: "blog"' in /home/dmytro/project/shop/shopaholic/application/libraries/Engine/Content.php:105
+Stack trace:
+#0 /home/dmytro/project/shop/shopaholic/application/libraries/Engine/Content/Element/Widget.php(61): Engine_Content->loadWidget('blog.profile-bl...')
+#1 /home/dmytro/project/shop/shopaholic/application/libraries/Engine/Content/Element/Abstract.php(583): Engine_Content_Element_Widget->_render()
+#2 /home/dmytro/project/shop/shopaholic/application/modules/Core/widgets/container-tabs/Controller.php(53): Engine_Content_Element_Abstract->render()
+#3 /home/dmytro/project/shop/shopaholic/application/libraries/Engine/Content/Widget/Abstract.php(250): Core_Widget_ContainerTabsController->indexAction()
+#4 /home/dmytro/project/shop/shopaholic/application/libraries/Engine/Content/Element/Widget.php(66): Engine_Content_Widget_Abstract->render(NULL)
+#5 /home/dmytro/project/shop/shopaholic/application/libraries/Engine/Content/Element/Abstract.php(583): Engine_Content_Element_Widget->_render()
+#6 /home/dmytro/project/shop/shopaholic/application/libraries/Engine/Content/Decorator/Children.php(31): Engine_Content_Element_Abstract->render()
+#7 /home/dmytro/project/shop/shopaholic/application/libraries/Engine/Content/Element/Abstract.php(594): Engine_Content_Decorator_Children->render('')
+#8 /home/dmytro/project/shop/shopaholic/application/libraries/Engine/Content/Decorator/Children.php(31): Engine_Content_Element_Abstract->render()
+#9 /home/dmytro/project/shop/shopaholic/application/libraries/Engine/Content/Element/Abstract.php(594): Engine_Content_Decorator_Children->render('')
+#10 /home/dmytro/project/shop/shopaholic/application/libraries/Engine/Content/Decorator/Children.php(31): Engine_Content_Element_Abstract->render()
+#11 /home/dmytro/project/shop/shopaholic/application/libraries/Engine/Content/Element/Abstract.php(594): Engine_Content_Decorator_Children->render('')
+#12 /home/dmytro/project/shop/shopaholic/application/libraries/Engine/Content.php(197): Engine_Content_Element_Abstract->render()
+#13 /home/dmytro/project/shop/shopaholic/application/libraries/Engine/Content/Controller/Action/Helper/Content.php(127): Engine_Content->render('user_profile_in...')
+#14 /home/dmytro/project/shop/shopaholic/application/modules/User/controllers/ProfileController.php(98): Engine_Content_Controller_Action_Helper_Content->render()
+#15 /home/dmytro/project/shop/shopaholic/application/libraries/Zend/Controller/Action.php(513): User_ProfileController->indexAction()
+#16 /home/dmytro/project/shop/shopaholic/application/libraries/Zend/Controller/Dispatcher/Standard.php(289): Zend_Controller_Action->dispatch('indexAction')
+#17 /home/dmytro/project/shop/shopaholic/application/libraries/Zend/Controller/Front.php(946): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#18 /home/dmytro/project/shop/shopaholic/application/modules/Core/Bootstrap.php(67): Zend_Controller_Front->dispatch()
+#19 /home/dmytro/project/shop/shopaholic/application/libraries/Engine/Application.php(99): Core_Bootstrap->run()
+#20 /home/dmytro/project/shop/shopaholic/application/index.php(177): Engine_Application->run()
+#21 /home/dmytro/project/shop/shopaholic/index.php(15): include('/home/dmytro/pr...')
+#22 {main}
+2011-05-20T15:10:10+00:00 WARN (4): exception 'Engine_Content_Exception' with message 'Widget's module is not enabled or not installed: "blog"' in /home/dmytro/project/shop/shopaholic/application/libraries/Engine/Content.php:105
+Stack trace:
+#0 /home/dmytro/project/shop/shopaholic/application/libraries/Engine/Content/Element/Widget.php(61): Engine_Content->loadWidget('blog.profile-bl...')
+#1 /home/dmytro/project/shop/shopaholic/application/libraries/Engine/Content/Element/Abstract.php(583): Engine_Content_Element_Widget->_render()
+#2 /home/dmytro/project/shop/shopaholic/application/modules/Core/widgets/container-tabs/Controller.php(53): Engine_Content_Element_Abstract->render()
+#3 /home/dmytro/project/shop/shopaholic/application/libraries/Engine/Content/Widget/Abstract.php(250): Core_Widget_ContainerTabsController->indexAction()
+#4 /home/dmytro/project/shop/shopaholic/application/libraries/Engine/Content/Element/Widget.php(66): Engine_Content_Widget_Abstract->render(NULL)
+#5 /home/dmytro/project/shop/shopaholic/application/libraries/Engine/Content/Element/Abstract.php(583): Engine_Content_Element_Widget->_render()
+#6 /home/dmytro/project/shop/shopaholic/application/libraries/Engine/Content/Decorator/Children.php(31): Engine_Content_Element_Abstract->render()
+#7 /home/dmytro/project/shop/shopaholic/application/libraries/Engine/Content/Element/Abstract.php(594): Engine_Content_Decorator_Children->render('')
+#8 /home/dmytro/project/shop/shopaholic/application/libraries/Engine/Content/Decorator/Children.php(31): Engine_Content_Element_Abstract->render()
+#9 /home/dmytro/project/shop/shopaholic/application/libraries/Engine/Content/Element/Abstract.php(594): Engine_Content_Decorator_Children->render('')
+#10 /home/dmytro/project/shop/shopaholic/application/libraries/Engine/Content/Decorator/Children.php(31): Engine_Content_Element_Abstract->render()
+#11 /home/dmytro/project/shop/shopaholic/application/libraries/Engine/Content/Element/Abstract.php(594): Engine_Content_Decorator_Children->render('')
+#12 /home/dmytro/project/shop/shopaholic/application/libraries/Engine/Content.php(197): Engine_Content_Element_Abstract->render()
+#13 /home/dmytro/project/shop/shopaholic/application/libraries/Engine/Content/Controller/Action/Helper/Content.php(127): Engine_Content->render('user_profile_in...')
+#14 /home/dmytro/project/shop/shopaholic/application/modules/User/controllers/ProfileController.php(98): Engine_Content_Controller_Action_Helper_Content->render()
+#15 /home/dmytro/project/shop/shopaholic/application/libraries/Zend/Controller/Action.php(513): User_ProfileController->indexAction()
+#16 /home/dmytro/project/shop/shopaholic/application/libraries/Zend/Controller/Dispatcher/Standard.php(289): Zend_Controller_Action->dispatch('indexAction')
+#17 /home/dmytro/project/shop/shopaholic/application/libraries/Zend/Controller/Front.php(946): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#18 /home/dmytro/project/shop/shopaholic/application/modules/Core/Bootstrap.php(67): Zend_Controller_Front->dispatch()
+#19 /home/dmytro/project/shop/shopaholic/application/libraries/Engine/Application.php(99): Core_Bootstrap->run()
+#20 /home/dmytro/project/shop/shopaholic/application/index.php(177): Engine_Application->run()
+#21 /home/dmytro/project/shop/shopaholic/index.php(15): include('/home/dmytro/pr...')
+#22 {main}
+2011-05-20T15:11:27+00:00 WARN (4): exception 'Engine_Content_Exception' with message 'Widget's module is not enabled or not installed: "blog"' in /home/dmytro/project/shop/shopaholic/application/libraries/Engine/Content.php:105
+Stack trace:
+#0 /home/dmytro/project/shop/shopaholic/application/libraries/Engine/Content/Element/Widget.php(61): Engine_Content->loadWidget('blog.profile-bl...')
+#1 /home/dmytro/project/shop/shopaholic/application/libraries/Engine/Content/Element/Abstract.php(583): Engine_Content_Element_Widget->_render()
+#2 /home/dmytro/project/shop/shopaholic/application/modules/Core/widgets/container-tabs/Controller.php(53): Engine_Content_Element_Abstract->render()
+#3 /home/dmytro/project/shop/shopaholic/application/libraries/Engine/Content/Widget/Abstract.php(250): Core_Widget_ContainerTabsController->indexAction()
+#4 /home/dmytro/project/shop/shopaholic/application/libraries/Engine/Content/Element/Widget.php(66): Engine_Content_Widget_Abstract->render(NULL)
+#5 /home/dmytro/project/shop/shopaholic/application/libraries/Engine/Content/Element/Abstract.php(583): Engine_Content_Element_Widget->_render()
+#6 /home/dmytro/project/shop/shopaholic/application/libraries/Engine/Content/Decorator/Children.php(31): Engine_Content_Element_Abstract->render()
+#7 /home/dmytro/project/shop/shopaholic/application/libraries/Engine/Content/Element/Abstract.php(594): Engine_Content_Decorator_Children->render('')
+#8 /home/dmytro/project/shop/shopaholic/application/libraries/Engine/Content/Decorator/Children.php(31): Engine_Content_Element_Abstract->render()
+#9 /home/dmytro/project/shop/shopaholic/application/libraries/Engine/Content/Element/Abstract.php(594): Engine_Content_Decorator_Children->render('')
+#10 /home/dmytro/project/shop/shopaholic/application/libraries/Engine/Content/Decorator/Children.php(31): Engine_Content_Element_Abstract->render()
+#11 /home/dmytro/project/shop/shopaholic/application/libraries/Engine/Content/Element/Abstract.php(594): Engine_Content_Decorator_Children->render('')
+#12 /home/dmytro/project/shop/shopaholic/application/libraries/Engine/Content.php(197): Engine_Content_Element_Abstract->render()
+#13 /home/dmytro/project/shop/shopaholic/application/libraries/Engine/Content/Controller/Action/Helper/Content.php(127): Engine_Content->render('user_profile_in...')
+#14 /home/dmytro/project/shop/shopaholic/application/modules/User/controllers/ProfileController.php(98): Engine_Content_Controller_Action_Helper_Content->render()
+#15 /home/dmytro/project/shop/shopaholic/application/libraries/Zend/Controller/Action.php(513): User_ProfileController->indexAction()
+#16 /home/dmytro/project/shop/shopaholic/application/libraries/Zend/Controller/Dispatcher/Standard.php(289): Zend_Controller_Action->dispatch('indexAction')
+#17 /home/dmytro/project/shop/shopaholic/application/libraries/Zend/Controller/Front.php(946): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#18 /home/dmytro/project/shop/shopaholic/application/modules/Core/Bootstrap.php(67): Zend_Controller_Front->dispatch()
+#19 /home/dmytro/project/shop/shopaholic/application/libraries/Engine/Application.php(99): Core_Bootstrap->run()
+#20 /home/dmytro/project/shop/shopaholic/application/index.php(177): Engine_Application->run()
+#21 /home/dmytro/project/shop/shopaholic/index.php(15): include('/home/dmytro/pr...')
+#22 {main}
+2011-05-20T15:12:03+00:00 WARN (4): exception 'Engine_Content_Exception' with message 'Widget's module is not enabled or not installed: "blog"' in /home/dmytro/project/shop/shopaholic/application/libraries/Engine/Content.php:105
+Stack trace:
+#0 /home/dmytro/project/shop/shopaholic/application/libraries/Engine/Content/Element/Widget.php(61): Engine_Content->loadWidget('blog.profile-bl...')
+#1 /home/dmytro/project/shop/shopaholic/application/libraries/Engine/Content/Element/Abstract.php(583): Engine_Content_Element_Widget->_render()
+#2 /home/dmytro/project/shop/shopaholic/application/modules/Core/widgets/container-tabs/Controller.php(53): Engine_Content_Element_Abstract->render()
+#3 /home/dmytro/project/shop/shopaholic/application/libraries/Engine/Content/Widget/Abstract.php(250): Core_Widget_ContainerTabsController->indexAction()
+#4 /home/dmytro/project/shop/shopaholic/application/libraries/Engine/Content/Element/Widget.php(66): Engine_Content_Widget_Abstract->render(NULL)
+#5 /home/dmytro/project/shop/shopaholic/application/libraries/Engine/Content/Element/Abstract.php(583): Engine_Content_Element_Widget->_render()
+#6 /home/dmytro/project/shop/shopaholic/application/libraries/Engine/Content/Decorator/Children.php(31): Engine_Content_Element_Abstract->render()
+#7 /home/dmytro/project/shop/shopaholic/application/libraries/Engine/Content/Element/Abstract.php(594): Engine_Content_Decorator_Children->render('')
+#8 /home/dmytro/project/shop/shopaholic/application/libraries/Engine/Content/Decorator/Children.php(31): Engine_Content_Element_Abstract->render()
+#9 /home/dmytro/project/shop/shopaholic/application/libraries/Engine/Content/Element/Abstract.php(594): Engine_Content_Decorator_Children->render('')
+#10 /home/dmytro/project/shop/shopaholic/application/libraries/Engine/Content/Decorator/Children.php(31): Engine_Content_Element_Abstract->render()
+#11 /home/dmytro/project/shop/shopaholic/application/libraries/Engine/Content/Element/Abstract.php(594): Engine_Content_Decorator_Children->render('')
+#12 /home/dmytro/project/shop/shopaholic/application/libraries/Engine/Content.php(197): Engine_Content_Element_Abstract->render()
+#13 /home/dmytro/project/shop/shopaholic/application/libraries/Engine/Content/Controller/Action/Helper/Content.php(127): Engine_Content->render('user_profile_in...')
+#14 /home/dmytro/project/shop/shopaholic/application/modules/User/controllers/ProfileController.php(98): Engine_Content_Controller_Action_Helper_Content->render()
+#15 /home/dmytro/project/shop/shopaholic/application/libraries/Zend/Controller/Action.php(513): User_ProfileController->indexAction()
+#16 /home/dmytro/project/shop/shopaholic/application/libraries/Zend/Controller/Dispatcher/Standard.php(289): Zend_Controller_Action->dispatch('indexAction')
+#17 /home/dmytro/project/shop/shopaholic/application/libraries/Zend/Controller/Front.php(946): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#18 /home/dmytro/project/shop/shopaholic/application/modules/Core/Bootstrap.php(67): Zend_Controller_Front->dispatch()
+#19 /home/dmytro/project/shop/shopaholic/application/libraries/Engine/Application.php(99): Core_Bootstrap->run()
+#20 /home/dmytro/project/shop/shopaholic/application/index.php(177): Engine_Application->run()
+#21 /home/dmytro/project/shop/shopaholic/index.php(15): include('/home/dmytro/pr...')
+#22 {main}
+2011-05-20T15:20:43+00:00 CRIT (2): exception 'Zend_Controller_Dispatcher_Exception' with message 'Invalid controller specified (blog)' in /home/dmytro/project/shop/shopaholic/application/libraries/Zend/Controller/Dispatcher/Standard.php:242
+Stack trace:
+#0 /home/dmytro/project/shop/shopaholic/application/libraries/Zend/Controller/Front.php(946): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/dmytro/project/shop/shopaholic/application/modules/Core/Bootstrap.php(67): Zend_Controller_Front->dispatch()
+#2 /home/dmytro/project/shop/shopaholic/application/libraries/Engine/Application.php(99): Core_Bootstrap->run()
+#3 /home/dmytro/project/shop/shopaholic/application/index.php(177): Engine_Application->run()
+#4 /home/dmytro/project/shop/shopaholic/index.php(15): include('/home/dmytro/pr...')
+#5 {main}
+2011-05-20T15:22:16+00:00 CRIT (2): exception 'Zend_Controller_Dispatcher_Exception' with message 'Invalid controller specified (blog)' in /home/dmytro/project/shop/shopaholic/application/libraries/Zend/Controller/Dispatcher/Standard.php:242
+Stack trace:
+#0 /home/dmytro/project/shop/shopaholic/application/libraries/Zend/Controller/Front.php(946): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/dmytro/project/shop/shopaholic/application/modules/Core/Bootstrap.php(67): Zend_Controller_Front->dispatch()
+#2 /home/dmytro/project/shop/shopaholic/application/libraries/Engine/Application.php(99): Core_Bootstrap->run()
+#3 /home/dmytro/project/shop/shopaholic/application/index.php(177): Engine_Application->run()
+#4 /home/dmytro/project/shop/shopaholic/index.php(15): include('/home/dmytro/pr...')
+#5 {main}
+2011-05-20T15:22:43+00:00 CRIT (2): exception 'Zend_Controller_Dispatcher_Exception' with message 'Invalid controller specified (blog)' in /home/dmytro/project/shop/shopaholic/application/libraries/Zend/Controller/Dispatcher/Standard.php:242
+Stack trace:
+#0 /home/dmytro/project/shop/shopaholic/application/libraries/Zend/Controller/Front.php(946): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/dmytro/project/shop/shopaholic/application/modules/Core/Bootstrap.php(67): Zend_Controller_Front->dispatch()
+#2 /home/dmytro/project/shop/shopaholic/application/libraries/Engine/Application.php(99): Core_Bootstrap->run()
+#3 /home/dmytro/project/shop/shopaholic/application/index.php(177): Engine_Application->run()
+#4 /home/dmytro/project/shop/shopaholic/index.php(15): include('/home/dmytro/pr...')
+#5 {main}
+2011-05-20T15:22:48+00:00 CRIT (2): exception 'Zend_Controller_Dispatcher_Exception' with message 'Invalid controller specified (blog)' in /home/dmytro/project/shop/shopaholic/application/libraries/Zend/Controller/Dispatcher/Standard.php:242
+Stack trace:
+#0 /home/dmytro/project/shop/shopaholic/application/libraries/Zend/Controller/Front.php(946): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/dmytro/project/shop/shopaholic/application/modules/Core/Bootstrap.php(67): Zend_Controller_Front->dispatch()
+#2 /home/dmytro/project/shop/shopaholic/application/libraries/Engine/Application.php(99): Core_Bootstrap->run()
+#3 /home/dmytro/project/shop/shopaholic/application/index.php(177): Engine_Application->run()
+#4 /home/dmytro/project/shop/shopaholic/index.php(15): include('/home/dmytro/pr...')
+#5 {main}
+2011-05-20T15:29:48+00:00 CRIT (2): exception 'Zend_Controller_Dispatcher_Exception' with message 'Invalid controller specified (cabinet)' in /home/dmytro/project/shop/shopaholic/application/libraries/Zend/Controller/Dispatcher/Standard.php:242
+Stack trace:
+#0 /home/dmytro/project/shop/shopaholic/application/libraries/Zend/Controller/Front.php(946): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/dmytro/project/shop/shopaholic/application/modules/Core/Bootstrap.php(67): Zend_Controller_Front->dispatch()
+#2 /home/dmytro/project/shop/shopaholic/application/libraries/Engine/Application.php(99): Core_Bootstrap->run()
+#3 /home/dmytro/project/shop/shopaholic/application/index.php(177): Engine_Application->run()
+#4 /home/dmytro/project/shop/shopaholic/index.php(15): include('/home/dmytro/pr...')
+#5 {main}
+2011-05-20T15:30:28+00:00 WARN (4): exception 'Engine_Content_Widget_Exception' with message 'Action "admin" does not exist in widget "Core_Widget_MenuFooterController"' in /home/dmytro/project/shop/shopaholic/application/libraries/Engine/Content/Widget/Abstract.php:214
+Stack trace:
+#0 /home/dmytro/project/shop/shopaholic/application/libraries/Engine/Content/Element/Widget.php(66): Engine_Content_Widget_Abstract->render('admin')
+#1 /home/dmytro/project/shop/shopaholic/application/libraries/Engine/Content/Element/Abstract.php(583): Engine_Content_Element_Widget->_render()
+#2 /home/dmytro/project/shop/shopaholic/application/libraries/Engine/Content/Decorator/Children.php(31): Engine_Content_Element_Abstract->render()
+#3 /home/dmytro/project/shop/shopaholic/application/libraries/Engine/Content/Element/Abstract.php(594): Engine_Content_Decorator_Children->render('')
+#4 /home/dmytro/project/shop/shopaholic/application/modules/Core/controllers/AdminContentController.php(427): Engine_Content_Element_Abstract->render()
+#5 /home/dmytro/project/shop/shopaholic/application/libraries/Zend/Controller/Action.php(513): Core_AdminContentController->widgetAction()
+#6 /home/dmytro/project/shop/shopaholic/application/libraries/Zend/Controller/Dispatcher/Standard.php(289): Zend_Controller_Action->dispatch('widgetAction')
+#7 /home/dmytro/project/shop/shopaholic/application/libraries/Zend/Controller/Front.php(946): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#8 /home/dmytro/project/shop/shopaholic/application/modules/Core/Bootstrap.php(67): Zend_Controller_Front->dispatch()
+#9 /home/dmytro/project/shop/shopaholic/application/libraries/Engine/Application.php(99): Core_Bootstrap->run()
+#10 /home/dmytro/project/shop/shopaholic/application/index.php(177): Engine_Application->run()
+#11 /home/dmytro/project/shop/shopaholic/index.php(15): include('/home/dmytro/pr...')
+#12 {main}
+2011-05-20T15:30:42+00:00 WARN (4): exception 'Engine_Content_Widget_Exception' with message 'Action "admin" does not exist in widget "Core_Widget_MenuFooterController"' in /home/dmytro/project/shop/shopaholic/application/libraries/Engine/Content/Widget/Abstract.php:214
+Stack trace:
+#0 /home/dmytro/project/shop/shopaholic/application/libraries/Engine/Content/Element/Widget.php(66): Engine_Content_Widget_Abstract->render('admin')
+#1 /home/dmytro/project/shop/shopaholic/application/libraries/Engine/Content/Element/Abstract.php(583): Engine_Content_Element_Widget->_render()
+#2 /home/dmytro/project/shop/shopaholic/application/libraries/Engine/Content/Decorator/Children.php(31): Engine_Content_Element_Abstract->render()
+#3 /home/dmytro/project/shop/shopaholic/application/libraries/Engine/Content/Element/Abstract.php(594): Engine_Content_Decorator_Children->render('')
+#4 /home/dmytro/project/shop/shopaholic/application/modules/Core/controllers/AdminContentController.php(427): Engine_Content_Element_Abstract->render()
+#5 /home/dmytro/project/shop/shopaholic/application/libraries/Zend/Controller/Action.php(513): Core_AdminContentController->widgetAction()
+#6 /home/dmytro/project/shop/shopaholic/application/libraries/Zend/Controller/Dispatcher/Standard.php(289): Zend_Controller_Action->dispatch('widgetAction')
+#7 /home/dmytro/project/shop/shopaholic/application/libraries/Zend/Controller/Front.php(946): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#8 /home/dmytro/project/shop/shopaholic/application/modules/Core/Bootstrap.php(67): Zend_Controller_Front->dispatch()
+#9 /home/dmytro/project/shop/shopaholic/application/libraries/Engine/Application.php(99): Core_Bootstrap->run()
+#10 /home/dmytro/project/shop/shopaholic/application/index.php(177): Engine_Application->run()
+#11 /home/dmytro/project/shop/shopaholic/index.php(15): include('/home/dmytro/pr...')
+#12 {main}
+2011-05-20T15:30:45+00:00 WARN (4): exception 'Engine_Content_Widget_Exception' with message 'Action "admin" does not exist in widget "Core_Widget_MenuFooterController"' in /home/dmytro/project/shop/shopaholic/application/libraries/Engine/Content/Widget/Abstract.php:214
+Stack trace:
+#0 /home/dmytro/project/shop/shopaholic/application/libraries/Engine/Content/Element/Widget.php(66): Engine_Content_Widget_Abstract->render('admin')
+#1 /home/dmytro/project/shop/shopaholic/application/libraries/Engine/Content/Element/Abstract.php(583): Engine_Content_Element_Widget->_render()
+#2 /home/dmytro/project/shop/shopaholic/application/libraries/Engine/Content/Decorator/Children.php(31): Engine_Content_Element_Abstract->render()
+#3 /home/dmytro/project/shop/shopaholic/application/libraries/Engine/Content/Element/Abstract.php(594): Engine_Content_Decorator_Children->render('')
+#4 /home/dmytro/project/shop/shopaholic/application/modules/Core/controllers/AdminContentController.php(427): Engine_Content_Element_Abstract->render()
+#5 /home/dmytro/project/shop/shopaholic/application/libraries/Zend/Controller/Action.php(513): Core_AdminContentController->widgetAction()
+#6 /home/dmytro/project/shop/shopaholic/application/libraries/Zend/Controller/Dispatcher/Standard.php(289): Zend_Controller_Action->dispatch('widgetAction')
+#7 /home/dmytro/project/shop/shopaholic/application/libraries/Zend/Controller/Front.php(946): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#8 /home/dmytro/project/shop/shopaholic/application/modules/Core/Bootstrap.php(67): Zend_Controller_Front->dispatch()
+#9 /home/dmytro/project/shop/shopaholic/application/libraries/Engine/Application.php(99): Core_Bootstrap->run()
+#10 /home/dmytro/project/shop/shopaholic/application/index.php(177): Engine_Application->run()
+#11 /home/dmytro/project/shop/shopaholic/index.php(15): include('/home/dmytro/pr...')
+#12 {main}
+2011-05-20T15:51:12+00:00 CRIT (2): exception 'Zend_Controller_Dispatcher_Exception' with message 'Invalid controller specified (blogs)' in /home/dmytro/project/shop/shopaholic/application/libraries/Zend/Controller/Dispatcher/Standard.php:242
+Stack trace:
+#0 /home/dmytro/project/shop/shopaholic/application/libraries/Zend/Controller/Front.php(946): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/dmytro/project/shop/shopaholic/application/modules/Core/Bootstrap.php(67): Zend_Controller_Front->dispatch()
+#2 /home/dmytro/project/shop/shopaholic/application/libraries/Engine/Application.php(99): Core_Bootstrap->run()
+#3 /home/dmytro/project/shop/shopaholic/application/index.php(177): Engine_Application->run()
+#4 /home/dmytro/project/shop/shopaholic/index.php(15): include('/home/dmytro/pr...')
+#5 {main}

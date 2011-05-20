@@ -1,0 +1,662 @@
+{
+  "type": "module",
+  "name": "poll",
+  "version": "4.0.4",
+  "revision": "7318",
+  "path": "application\/modules\/Poll",
+  "repository": null,
+  "meta": {
+    "date": "Thu, 16 Sep 2010 00:48:22 +0000",
+    "title": "Polls",
+    "description": "Polls",
+    "developer": null,
+    "authors": [
+      "Webligo Developments"
+    ],
+    "changeLog": {
+      "4.0.4": {
+        "externals\/styles\/main.css": "Improved RTL support",
+        "Plugin\/Task\/Maintenance\/RebuildPrivacy.php": "Added to fix privacy issues in the feed",
+        "settings\/manifest.php": "Incremented version",
+        "settings\/my-upgrade-4.0.3-4.0.4.sql": "Added",
+        "settings\/my.sql": "Incremented version",
+        "views\/scripts\/index\/manage.tpl": "Added missing translation",
+        "\/application\/languages\/en\/poll.csv": "Added missing phrases"
+      },
+      "4.0.3": {
+        "controllers\/IndexController.php": "Fixed activity privacy bug",
+        "Form\/Create.php": "Added",
+        "Form\/Edit.php": "Added",
+        "Form\/Index\/Create.php": "Moved",
+        "Form\/Index\/Edit.php": "Moved",
+        "Model\/Poll.php": "Fixed search indexing bug",
+        "settings\/manifest.php": "Incremented version",
+        "settings\/my.sql": "Incremented version",
+        "views\/scripts\/admin-manage\/index.tpl": "Added correct locale date format",
+        "views\/scripts\/index\/create.tpl": "Added re-population of options on failed validation",
+        "\/application\/languages\/en\/poll.csv": "Added phrases"
+      },
+      "4.0.2": {
+        "controllers\/AdminSettingsController.php": "Various level settings fixes and enhancements",
+        "Form\/Admin\/Level.php": "Moved",
+        "Form\/Admin\/Settings\/Level.php": "Various level settings fixes and enhancements",
+        "settings\/manifest.php": "Incremented version",
+        "settings\/my-upgrade-4.0.1-4.0.2.sql": "Added",
+        "settings\/my.sql": "Various level settings fixes and enhancements"
+      },
+      "4.0.1": {
+        "controllers\/AdminSettingsController.php": "Fixed problem in level select",
+        "controllers\/IndexController.php": "Fixed public permissions",
+        "Plugin\/Core.php": "Query optimization",
+        "settings\/manifest.php": "Incremented version",
+        "settings\/my-upgrade-4.0.0-4.0.1.sql": "Added",
+        "settings\/my.sql": "Added missing search, view_count, comment_count columns to the engine4_poll_polls table"
+      }
+    }
+  },
+  "dependencies": {
+    "module-core": {
+      "type": "module",
+      "name": "core",
+      "guid": "module-core",
+      "minVersion": "4.0.4",
+      "maxVersion": null
+    }
+  },
+  "permissions": [
+    
+  ],
+  "actions": [
+    "install",
+    "upgrade",
+    "refresh",
+    "enable",
+    "disable"
+  ],
+  "callback": {
+    "path": "application\/modules\/Poll\/settings\/install.php",
+    "class": "Poll_Installer",
+    "priority": 100
+  },
+  "tests": null,
+  "structure": {
+    "application\/modules\/Poll": {
+      "type": "directory",
+      "path": "application\/modules\/Poll",
+      "structure": [
+        {
+          "path": "settings",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "settings\/my.sql",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 8777,
+          "sha1": "48231575be99ff748e788f8074cecdc5c1c5101f"
+        },
+        {
+          "path": "settings\/manifest.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 6691,
+          "sha1": "1c03293884de98491a0e9950494468dfd9625789"
+        },
+        {
+          "path": "settings\/my-upgrade-4.0.3-4.0.4.sql",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 547,
+          "sha1": "0ebced6bc6080b44d78d8ea6ccbf45a52488e806"
+        },
+        {
+          "path": "settings\/my-upgrade-4.0.1-4.0.2.sql",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 3627,
+          "sha1": "dbfeacc633967b19a53256da77116abb783327bf"
+        },
+        {
+          "path": "settings\/my-upgrade-4.0.0-4.0.1.sql",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 704,
+          "sha1": "e0464d6e03ed95450b2cb0ef77e28f4734ea560f"
+        },
+        {
+          "path": "settings\/content.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 595,
+          "sha1": "78ba68728fe378e9eee9922b1326187053029e81"
+        },
+        {
+          "path": "settings\/install.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 2685,
+          "sha1": "7bbb12d85f2b71831ddc36b4a27efed79a1f2352"
+        },
+        {
+          "path": "Api",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "Api\/Core.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 6553,
+          "sha1": "50355d4d0875b8f8f79e0116fc86d77dcdcd2d43"
+        },
+        {
+          "path": "Plugin",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "Plugin\/Task",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "Plugin\/Task\/Maintenance",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "Plugin\/Task\/Maintenance\/RebuildPrivacy.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 3958,
+          "sha1": "2ad80d72cd6ebd62f5074aed14de95f464fb68b9"
+        },
+        {
+          "path": "Plugin\/Core.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 1496,
+          "sha1": "086c8af3f21410ef8d1e6e8edb4b44424471fdf6"
+        },
+        {
+          "path": "Model",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "Model\/DbTable",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "Model\/DbTable\/Votes.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 519,
+          "sha1": "348089859ea2c78e26771e10d9573f92d5dccac3"
+        },
+        {
+          "path": "Model\/DbTable\/Options.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 523,
+          "sha1": "de29333844445fb423e100247badc31d5184c2bf"
+        },
+        {
+          "path": "Model\/DbTable\/Polls.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 560,
+          "sha1": "7a8bade8e4127204783a4b650a79a825d0ff9234"
+        },
+        {
+          "path": "Model\/Poll.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 4161,
+          "sha1": "d45fefbfe63f68aabf0c63876113f326f179dfe0"
+        },
+        {
+          "path": "controllers",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "controllers\/AdminSettingsController.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 3193,
+          "sha1": "ed0b1dfda2902ce1974cc4dbb680ca1926148f37"
+        },
+        {
+          "path": "controllers\/AdminManageController.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 2321,
+          "sha1": "16e3e669433d0ca34c44edbd182eef0a81ea69e0"
+        },
+        {
+          "path": "controllers\/IndexController.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 15613,
+          "sha1": "24f23c1fa469ba555bae7f99718e45e474648571"
+        },
+        {
+          "path": "externals",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "externals\/images",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "externals\/images\/loading.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 878,
+          "sha1": "54fc32753d51a95f7c61b10f0b8a0bfa1b2a2e57"
+        },
+        {
+          "path": "externals\/images\/types",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "externals\/images\/types\/poll.png",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 541,
+          "sha1": "4e9576a56db3d142113b8905d7aa93e31c9f441b"
+        },
+        {
+          "path": "externals\/images\/edit.png",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 450,
+          "sha1": "62a1b41ac5eefbf3d0ad578a19572d4096d88146"
+        },
+        {
+          "path": "externals\/images\/new.png",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 626,
+          "sha1": "54db8115fc526932b9a766fdf455609e99924b5f"
+        },
+        {
+          "path": "externals\/images\/delete.png",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 636,
+          "sha1": "9907bed17735a3962fb9d037390597ecb01cf800"
+        },
+        {
+          "path": "externals\/.htaccess",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 147,
+          "sha1": "9f1638a8edbe1c5d28789e017fb35b2f2465f01e"
+        },
+        {
+          "path": "externals\/styles",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "externals\/styles\/main.css",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 4709,
+          "sha1": "5f741a350ec77ca79d1cb4117cfd8320aaa60887"
+        },
+        {
+          "path": "widgets",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/profile-polls",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/profile-polls\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 1888,
+          "sha1": "0a8dc8e6eb9c6864c86b88f7f88c00f91019720d"
+        },
+        {
+          "path": "widgets\/profile-polls\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 1202,
+          "sha1": "a9a2242930fc059bc6b4beece99bb161b2041ca7"
+        },
+        {
+          "path": "Form",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "Form\/Edit.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 781,
+          "sha1": "ba02fe89cd2b32b1f8948b38ff4fdc648b87b84b"
+        },
+        {
+          "path": "Form\/Admin",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "Form\/Admin\/Global.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 2826,
+          "sha1": "eb811f6d64a94a94ef3e82511f7312af282afafb"
+        },
+        {
+          "path": "Form\/Admin\/Settings",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "Form\/Admin\/Settings\/Level.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 4734,
+          "sha1": "dbe92a5f02629d076d8c69a8d2e4e62e328b55d2"
+        },
+        {
+          "path": "Form\/Index",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "Form\/Index\/Vote.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 2584,
+          "sha1": "488a5d38e7294be7fdbeec7eda8c0f157f3c80e3"
+        },
+        {
+          "path": "Form\/Index\/Search.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 1086,
+          "sha1": "b0520f75feaf4c0691b52d47a23084b569854a3d"
+        },
+        {
+          "path": "Form\/Create.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 3265,
+          "sha1": "6b29d948cf796858067de143339a784ccdde11a5"
+        },
+        {
+          "path": "views",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/admin-settings",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/admin-settings\/level.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 842,
+          "sha1": "4a1f18b95072370143b386e35676c8bcda65c2cf"
+        },
+        {
+          "path": "views\/scripts\/admin-settings\/placeholder.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 643,
+          "sha1": "7c35a7059480a6d54dc387204a72bc0568b03670"
+        },
+        {
+          "path": "views\/scripts\/admin-settings\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 680,
+          "sha1": "b428c02f7c82088dbac6480951b1febd4dc04476"
+        },
+        {
+          "path": "views\/scripts\/index",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/index\/delete.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 1603,
+          "sha1": "5e840e16a577914114e4e60c3e8bf9f585e60b1f"
+        },
+        {
+          "path": "views\/scripts\/index\/list.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 663,
+          "sha1": "aefe2d2f16a19e18b9eb20d62741266063235d22"
+        },
+        {
+          "path": "views\/scripts\/index\/manage.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 2909,
+          "sha1": "0a848aea9ac392fcc3378092237f370927f7935e"
+        },
+        {
+          "path": "views\/scripts\/index\/edit.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 628,
+          "sha1": "339f332dba719a11cb57b87ae317fb74094db90a"
+        },
+        {
+          "path": "views\/scripts\/index\/browse.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 3106,
+          "sha1": "e37397ab132dd56bb7ce7981eedf5b3ef1951029"
+        },
+        {
+          "path": "views\/scripts\/index\/view.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 7151,
+          "sha1": "3e09656a7a5455a15c271c3905550a7f146e2698"
+        },
+        {
+          "path": "views\/scripts\/index\/create.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 2636,
+          "sha1": "0d3b4a04fc02da5b8600ef084c026a6864ad0b41"
+        },
+        {
+          "path": "views\/scripts\/admin-manage",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/admin-manage\/placeholder.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 643,
+          "sha1": "7c35a7059480a6d54dc387204a72bc0568b03670"
+        },
+        {
+          "path": "views\/scripts\/admin-manage\/delete.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 1105,
+          "sha1": "8a991962335aff2e4cc2c5228cd7089b774bc21e"
+        },
+        {
+          "path": "views\/scripts\/admin-manage\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 3647,
+          "sha1": "77b7abb3e05e01918e633dc6b9444e9991c2637e"
+        },
+        {
+          "path": "views\/scripts\/admin-manage\/deleteselected.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 1528,
+          "sha1": "54886ea7d2dfa85d338e439c96c7dc15e13b9db9"
+        },
+        {
+          "path": "Bootstrap.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 535,
+          "sha1": "8aa43876f3b3c139a3009980399d90115f9b8354"
+        }
+      ]
+    },
+    "application\/languages\/en\/poll.csv": {
+      "type": "file",
+      "path": "application\/languages\/en\/poll.csv",
+      "structure": {
+        "path": "poll.csv",
+        "dir": false,
+        "file": true,
+        "perms": "0644",
+        "size": 8260,
+        "sha1": "f932208d1863d0fc7685d644fec7452ccfff318e"
+      }
+    }
+  }
+}
