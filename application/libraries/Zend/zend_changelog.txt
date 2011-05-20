@@ -1,0 +1,12 @@
+Zend/Db/Adapter/Mysqli.php (Modified-client lib compat) -- j
+Zend/Navigation/Page/Mvc.php (Modified-twice) -- j
+Zend/Exception.php (Modified) -- j
+Zend/Form/Decorator/Description.php (Modified desc class name) -- j
+Zend/Validate/NotEmpty.php (verbage of self::IS_EMPTY and self::INVALID) -- j
+Zend/Navigation/Page.php (Modified hashCode() for 5.1 compat) -- sp
+Zend/View/Helper/Placeholder/Container/Abstract.php (added function ksort() for 5.1 compat) -- sp
+Zend/Translate/Adapter.php (disabled strlen() conditional on line 164; modified for custom.csv loading last & only CSV files) -- sp
+Zend/Db/Table/Select.php (strcmp tostr php 5.1 compat) -- j
+Zend/Filter/HtmlEntities.php (htmlentities php 5.1 compat) -- j
+Zend/Locale/Data.php (tostring php 5.1 compat) -- j
+Zend/Db/Adapter/Mysqli.php (Modified _connect() to support socket connections in the PORT field, or in the HOST field)

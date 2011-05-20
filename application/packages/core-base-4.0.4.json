@@ -1,0 +1,718 @@
+{
+  "type": "core",
+  "name": "base",
+  "version": "4.0.4",
+  "revision": "7322",
+  "path": "\/",
+  "repository": null,
+  "meta": {
+    "date": "Thu, 16 Sep 2010 02:22:41 +0000",
+    "title": "Base",
+    "description": "Base",
+    "developer": null,
+    "authors": [
+      "Webligo Developments"
+    ],
+    "changeLog": {
+      "4.0.4": {
+        ".htaccess": "Fixed 500 errors on some servers",
+        "robots.txt": "Fixed query string problems in redirect",
+        "application\/index.php": "Improved SSL support; fixed query string problems in redirect",
+        "application\/settings\/beta1-beta2.sql": "Removed",
+        "application\/settings\/beta1-beta2_classifieds.sql": "Removed",
+        "application\/settings\/beta2-beta3.sql": "Removed",
+        "application\/settings\/beta3-rc1.sql": "Removed",
+        "application\/settings\/constants.xml": "Added constant theme_pulldown_contents_list_background_color_active",
+        "application\/settings\/manifest.php": "Incremented version"
+      },
+      "4.0.3": {
+        ".htaccess": "Added better missing file handling",
+        "application\/css.php": "Removed some test code",
+        "application\/index.php": "Missing configuration files handled better",
+        "application\/settings\/cache.php": "Removed",
+        "application\/settings\/cache.sample.php": "Added",
+        "application\/settings\/general.php": "Removed",
+        "application\/settings\/general.sample.php": "Added",
+        "application\/settings\/mail.php": "Removed",
+        "application\/settings\/mail.sample.php": "Added",
+        "application\/settings\/manifest.php": "Incremented version",
+        "application\/settings\/session.php": "Removed",
+        "application\/settings\/session.sample.php": "Added"
+      },
+      "4.0.2": {
+        "application\/settings\/manifest.php": "Incremented version; permissions are set in the installer"
+      },
+      "4.0.1": {
+        "index.php": "Added svn:keywords",
+        "README.html": "Updated readme",
+        "application\/comet.php": "Removed",
+        "application\/index.php": "Removed comet; modification to APPLICATION_ENV handling",
+        "application\/settings\/manifest.php": "Incremented version; removed comet; adding theme .htaccess to manifest files",
+        "application\/settings\/my.sql": "Regenerated",
+        "application\/settings\/session.php": "Default session cookie to not httponly to fix FancyUpload problems"
+      }
+    }
+  },
+  "dependencies": null,
+  "permissions": {
+    "application\/languages": {
+      "path": "application\/languages",
+      "mode": 511,
+      "recursive": true,
+      "inclusive": true
+    },
+    "application\/packages": {
+      "path": "application\/packages",
+      "mode": 511,
+      "recursive": true,
+      "inclusive": true
+    },
+    "application\/themes": {
+      "path": "application\/themes",
+      "mode": 511,
+      "recursive": true,
+      "inclusive": true
+    },
+    "application\/settings": {
+      "path": "application\/settings",
+      "mode": 511,
+      "recursive": true,
+      "inclusive": true
+    },
+    "public": {
+      "path": "public",
+      "mode": 511,
+      "recursive": true,
+      "inclusive": true
+    },
+    "temporary": {
+      "path": "temporary",
+      "mode": 511,
+      "recursive": true,
+      "inclusive": true
+    }
+  },
+  "actions": [
+    "install",
+    "upgrade",
+    "refresh"
+  ],
+  "callback": null,
+  "tests": null,
+  "structure": {
+    ".htaccess": {
+      "type": "file",
+      "path": ".htaccess",
+      "structure": {
+        "path": ".htaccess",
+        "dir": false,
+        "file": true,
+        "perms": "0644",
+        "size": 884,
+        "sha1": "0641352b209e79e87472c8ddfea6ec1db1c3ae2e"
+      }
+    },
+    "README.html": {
+      "type": "file",
+      "path": "README.html",
+      "structure": {
+        "path": "README.html",
+        "dir": false,
+        "file": true,
+        "perms": "0644",
+        "size": 18840,
+        "sha1": "5039e41092916b295d354bc55ddae6fa47ee9e89"
+      }
+    },
+    "index.php": {
+      "type": "file",
+      "path": "index.php",
+      "structure": {
+        "path": "index.php",
+        "dir": false,
+        "file": true,
+        "perms": "0755",
+        "size": 494,
+        "sha1": "bb41fd3afd9928111d1d70dde5d3e8db6d42e97f"
+      }
+    },
+    "robots.txt": {
+      "type": "file",
+      "path": "robots.txt",
+      "structure": {
+        "path": "robots.txt",
+        "dir": false,
+        "file": true,
+        "perms": "0644",
+        "size": 183,
+        "sha1": "d78ea964166d8aad4e3a643f9cc96a237ad3059a"
+      }
+    },
+    "xd_receiver.htm": {
+      "type": "file",
+      "path": "xd_receiver.htm",
+      "structure": {
+        "path": "xd_receiver.htm",
+        "dir": false,
+        "file": true,
+        "perms": "0644",
+        "size": 360,
+        "sha1": "d4f72077e8ccc71a5def99026355deb94d04d513"
+      }
+    },
+    "application\/.htaccess": {
+      "type": "file",
+      "path": "application\/.htaccess",
+      "structure": {
+        "path": ".htaccess",
+        "dir": false,
+        "file": true,
+        "perms": "0644",
+        "size": 146,
+        "sha1": "2eb94a0cf2a2b9fc2079dd23a5a1af66cffd4b1d"
+      }
+    },
+    "application\/comet.php": {
+      "type": "file",
+      "path": "application\/comet.php",
+      "structure": {
+        "path": "comet.php",
+        "dir": false,
+        "file": true,
+        "perms": "0644",
+        "size": 7,
+        "sha1": "5e2a7c682e443a03bab1a1f3f159997ffdd74b27"
+      }
+    },
+    "application\/config.php": {
+      "type": "file",
+      "path": "application\/config.php",
+      "structure": {
+        "path": "config.php",
+        "dir": false,
+        "file": true,
+        "perms": "0644",
+        "size": 1821,
+        "sha1": "5785e569cdcea46a0ddcd5adf5038277df825d9e"
+      }
+    },
+    "application\/css.php": {
+      "type": "file",
+      "path": "application\/css.php",
+      "structure": {
+        "path": "css.php",
+        "dir": false,
+        "file": true,
+        "perms": "0644",
+        "size": 3317,
+        "sha1": "4cf4763ca12b98800a11da0d789188679e6b2dd2"
+      }
+    },
+    "application\/index.php": {
+      "type": "file",
+      "path": "application\/index.php",
+      "structure": {
+        "path": "index.php",
+        "dir": false,
+        "file": true,
+        "perms": "0755",
+        "size": 6404,
+        "sha1": "0d3b25f89d032210be923831b6f557becd206244"
+      }
+    },
+    "application\/lite.php": {
+      "type": "file",
+      "path": "application\/lite.php",
+      "structure": {
+        "path": "lite.php",
+        "dir": false,
+        "file": true,
+        "perms": "0644",
+        "size": 2095,
+        "sha1": "15fa9871bd4e19df7e4fbf0dd5fab5fa3d4113f3"
+      }
+    },
+    "application\/maintenance.html": {
+      "type": "file",
+      "path": "application\/maintenance.html",
+      "structure": {
+        "path": "maintenance.html",
+        "dir": false,
+        "file": true,
+        "perms": "0644",
+        "size": 1424,
+        "sha1": "db972cdfa9a7fe4094f97f62befab0b1d83cfd8e"
+      }
+    },
+    "application\/mobile.php": {
+      "type": "file",
+      "path": "application\/mobile.php",
+      "structure": {
+        "path": "mobile.php",
+        "dir": false,
+        "file": true,
+        "perms": "0644",
+        "size": 1148,
+        "sha1": "854b70f7ac8e3500fbf4b257f4f8aaf10f55a8b4"
+      }
+    },
+    "application\/offline.html": {
+      "type": "file",
+      "path": "application\/offline.html",
+      "structure": {
+        "path": "offline.html",
+        "dir": false,
+        "file": true,
+        "perms": "0644",
+        "size": 374,
+        "sha1": "4df56d73ac89eb9d7db8e5047135603925a316cd"
+      }
+    },
+    "application\/libraries\/index.html": {
+      "type": "file",
+      "path": "application\/libraries\/index.html",
+      "structure": {
+        "path": "index.html",
+        "dir": false,
+        "file": true,
+        "perms": "0644",
+        "size": 187,
+        "sha1": "50060ff9c1a03efb51b129d3b0ee84f0a0b4e761"
+      }
+    },
+    "application\/modules\/index.html": {
+      "type": "file",
+      "path": "application\/modules\/index.html",
+      "structure": {
+        "path": "index.html",
+        "dir": false,
+        "file": true,
+        "perms": "0644",
+        "size": 187,
+        "sha1": "50060ff9c1a03efb51b129d3b0ee84f0a0b4e761"
+      }
+    },
+    "application\/packages\/index.html": {
+      "type": "file",
+      "path": "application\/packages\/index.html",
+      "structure": {
+        "path": "index.html",
+        "dir": false,
+        "file": true,
+        "perms": "0644",
+        "size": 0,
+        "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+      }
+    },
+    "application\/plugins\/index.html": {
+      "type": "file",
+      "path": "application\/plugins\/index.html",
+      "structure": {
+        "path": "index.html",
+        "dir": false,
+        "file": true,
+        "perms": "0644",
+        "size": 187,
+        "sha1": "50060ff9c1a03efb51b129d3b0ee84f0a0b4e761"
+      }
+    },
+    "application\/themes\/index.html": {
+      "type": "file",
+      "path": "application\/themes\/index.html",
+      "structure": {
+        "path": "index.html",
+        "dir": false,
+        "file": true,
+        "perms": "0644",
+        "size": 187,
+        "sha1": "50060ff9c1a03efb51b129d3b0ee84f0a0b4e761"
+      }
+    },
+    "application\/themes\/.htaccess": {
+      "type": "file",
+      "path": "application\/themes\/.htaccess",
+      "structure": {
+        "path": ".htaccess",
+        "dir": false,
+        "file": true,
+        "perms": "0644",
+        "size": 147,
+        "sha1": "9f1638a8edbe1c5d28789e017fb35b2f2465f01e"
+      }
+    },
+    "application\/widgets\/index.html": {
+      "type": "file",
+      "path": "application\/widgets\/index.html",
+      "structure": {
+        "path": "index.html",
+        "dir": false,
+        "file": true,
+        "perms": "0644",
+        "size": 187,
+        "sha1": "50060ff9c1a03efb51b129d3b0ee84f0a0b4e761"
+      }
+    },
+    "externals\/index.html": {
+      "type": "file",
+      "path": "externals\/index.html",
+      "structure": {
+        "path": "index.html",
+        "dir": false,
+        "file": true,
+        "perms": "0644",
+        "size": 187,
+        "sha1": "50060ff9c1a03efb51b129d3b0ee84f0a0b4e761"
+      }
+    },
+    "externals\/.htaccess": {
+      "type": "file",
+      "path": "externals\/.htaccess",
+      "structure": {
+        "path": ".htaccess",
+        "dir": false,
+        "file": true,
+        "perms": "0644",
+        "size": 131,
+        "sha1": "cafcf4517b72d555fb174fdaf0ab06f287e143c4"
+      }
+    },
+    "application\/settings": {
+      "type": "directory",
+      "path": "application\/settings",
+      "structure": [
+        {
+          "path": "constants.xml",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 8607,
+          "sha1": "00df49931e0ac18c8a1853fabe3d76f397224eee"
+        },
+        {
+          "path": "my.sql",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 196307,
+          "sha1": "105a103ba076a34562119c60f1d6ff20060dc4e6"
+        },
+        {
+          "path": "cache.sample.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 617,
+          "sha1": "c68414781739d6a54bafed8edf7e6940601dc927"
+        },
+        {
+          "path": "index.html",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 187,
+          "sha1": "50060ff9c1a03efb51b129d3b0ee84f0a0b4e761"
+        },
+        {
+          "path": "scaffold.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 4739,
+          "sha1": "8101abc0815ca402590b05f477e2eeb88c2590d9"
+        },
+        {
+          "path": "manifest.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 4849,
+          "sha1": "ca04be93d8353341d52addcf733d7504b847fe3f"
+        },
+        {
+          "path": "database.sample.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 630,
+          "sha1": "ad584783725620f5a20895d777b07b608f920e34"
+        },
+        {
+          "path": "repositories.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 394,
+          "sha1": "cf645b3c4f33252ba40a30cd483b0784cd274b35"
+        },
+        {
+          "path": "mail.sample.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 341,
+          "sha1": "eeb2d17fc79313e23c75aba07dcccafbdb75eb62"
+        },
+        {
+          "path": "general.sample.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 393,
+          "sha1": "d19acb0ac2ce5ac65a7947a1b222a55ed47121e7"
+        },
+        {
+          "path": "session.sample.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 596,
+          "sha1": "53d77c155a2eb4afd92af0d691665a096bf1289a"
+        }
+      ]
+    },
+    "public": {
+      "type": "directory",
+      "path": "public",
+      "structure": [
+        {
+          "path": "admin",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "admin\/index.html",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 187,
+          "sha1": "50060ff9c1a03efb51b129d3b0ee84f0a0b4e761"
+        },
+        {
+          "path": "index.html",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 187,
+          "sha1": "50060ff9c1a03efb51b129d3b0ee84f0a0b4e761"
+        },
+        {
+          "path": "temporary",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "temporary\/index.html",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 187,
+          "sha1": "50060ff9c1a03efb51b129d3b0ee84f0a0b4e761"
+        },
+        {
+          "path": "user",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "user\/index.html",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 187,
+          "sha1": "50060ff9c1a03efb51b129d3b0ee84f0a0b4e761"
+        }
+      ]
+    },
+    "temporary\/cache": {
+      "type": "directory",
+      "path": "temporary\/cache",
+      "structure": [
+        {
+          "path": "index.html",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 196,
+          "sha1": "455125f35129f861011dd39f5417dcf8cc9ada25"
+        }
+      ]
+    },
+    "temporary\/log": {
+      "type": "directory",
+      "path": "temporary\/log",
+      "structure": [
+        {
+          "path": "index.html",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 196,
+          "sha1": "455125f35129f861011dd39f5417dcf8cc9ada25"
+        },
+        {
+          "path": "scaffold",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "scaffold\/index.html",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 196,
+          "sha1": "455125f35129f861011dd39f5417dcf8cc9ada25"
+        }
+      ]
+    },
+    "temporary\/scaffold": {
+      "type": "directory",
+      "path": "temporary\/scaffold",
+      "structure": [
+        {
+          "path": "index.html",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 196,
+          "sha1": "455125f35129f861011dd39f5417dcf8cc9ada25"
+        }
+      ]
+    },
+    "temporary\/session": {
+      "type": "directory",
+      "path": "temporary\/session",
+      "structure": [
+        {
+          "path": "index.html",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 196,
+          "sha1": "455125f35129f861011dd39f5417dcf8cc9ada25"
+        }
+      ]
+    },
+    "temporary\/package": {
+      "type": "directory",
+      "path": "temporary\/package",
+      "structure": [
+        {
+          "path": "packages",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "packages\/index.html",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 196,
+          "sha1": "455125f35129f861011dd39f5417dcf8cc9ada25"
+        },
+        {
+          "path": "archives",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "archives\/index.html",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 187,
+          "sha1": "50060ff9c1a03efb51b129d3b0ee84f0a0b4e761"
+        },
+        {
+          "path": "index.html",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 196,
+          "sha1": "455125f35129f861011dd39f5417dcf8cc9ada25"
+        },
+        {
+          "path": "manifests",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "manifests\/index.html",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 196,
+          "sha1": "455125f35129f861011dd39f5417dcf8cc9ada25"
+        },
+        {
+          "path": "repositories",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "repositories\/index.html",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 196,
+          "sha1": "455125f35129f861011dd39f5417dcf8cc9ada25"
+        },
+        {
+          "path": "sdk",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "sdk\/index.html",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 196,
+          "sha1": "455125f35129f861011dd39f5417dcf8cc9ada25"
+        },
+        {
+          "path": "compare",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "compare\/index.html",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 196,
+          "sha1": "455125f35129f861011dd39f5417dcf8cc9ada25"
+        }
+      ]
+    }
+  }
+}

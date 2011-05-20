@@ -1,0 +1,64 @@
+{
+  "type": "widget",
+  "name": "rss",
+  "version": "4.0.2",
+  "revision": "7129",
+  "path": "application\/widgets\/rss",
+  "repository": null,
+  "meta": {
+    "date": "Thu, 16 Sep 2010 02:22:41 +0000",
+    "title": "RSS Feed",
+    "description": "Displays an RSS feed.",
+    "developer": null,
+    "authors": [
+      "Webligo Developments"
+    ],
+    "changeLog": {
+      "4.0.2": {
+        "index.tpl": "Added styles",
+        "manifest.php": "Incremented version"
+      }
+    }
+  },
+  "dependencies": null,
+  "permissions": [
+    
+  ],
+  "actions": [
+    
+  ],
+  "callback": null,
+  "tests": null,
+  "structure": {
+    "application\/widgets\/rss": {
+      "type": "directory",
+      "path": "application\/widgets\/rss",
+      "structure": [
+        {
+          "path": "Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 1070,
+          "sha1": "27d264ea7feb9cb3883f5baacc6d332da47c5acb"
+        },
+        {
+          "path": "manifest.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 1333,
+          "sha1": "f43693569f2038dec23dc4935f3eba0a876ff63c"
+        },
+        {
+          "path": "index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 1347,
+          "sha1": "f0f72e2a7fba4fd4e08a719604cf09ea0d81299f"
+        }
+      ]
+    }
+  }
+}

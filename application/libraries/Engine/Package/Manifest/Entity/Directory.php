@@ -1,0 +1,132 @@
+<?php
+/**
+ * SocialEngine
+ *
+ * @category   Engine
+ * @package    Engine_Package
+ * @copyright  Copyright 2006-2010 Webligo Developments
+ * @license    http://www.socialengine.net/license/
+ * @version    $Id: Directory.php 7244 2010-09-01 01:49:53Z john $
+ * @author     John Boehr <j@webligo.com>
+ */
+
+/**
+ * @category   Engine
+ * @package    Engine_Filter
+ * @copyright  Copyright 2006-2010 Webligo Developments
+ * @license    http://www.socialengine.net/license/
+ * @author     John Boehr <j@webligo.com>
+ */
+class Engine_Package_Manifest_Entity_Directory extends Engine_Package_Manifest_Entity_Abstract
+{
+  protected $_path;
+
+  protected $_structure;
+
+  protected $_addDirectoryToArchive = true;
+
+  protected $_props = array(
+    'path',
+    'structure',
+  );
+  
+  public function __construct($spec, $options = null)
+  {
+    if( is_array($spec) ) {
+      $this->fromArray($spec);
+    }
+    if( is_array($options) ) {
+      $this->setOptions($options);
+    }
+    if( is_string($spec) ) {
+      $this->read($spec);
+    }
+  }
+
+  public function getPath()
+  {
+    if( null === $this->_path ) {
+      throw new Engine_Package_Manifest_Exception('Path cannot be empty');
+    }
+    return $this->_path;
+  }
+
+  public function setPath($path)
+  {
+    $this->_path = $path;
+    return $this;
+  }
+
+  public function getAddDirectoryToArchive()
+  {
+    return (bool) $this->_addDirectoryToArchive;
+  }
+
+  public function setAddDirectoryToArchive($flag = false)
+  {
+    $this->_addDirectoryToArchive = (bool) $flag;
+    return $this;
+  }
+
+  public function getStructure()
+  {
+    return $this->_structure;
+  }
+
+  public function setStructure(array $structure)
+  {
+    $this->_structure = $structure;
+    return $this;
+  }
+  
+  public function getFileStructure($assoc = false)
+  {
+    $files = array();
+    foreach( $this->getStructure() as $struct ) {
+      if( $assoc ) {
+        $files[$this->getPath() . '/' . $struct['path']] = $struct;
+      } else {
+        $files[] = $this->getPath() . '/' . $struct['path'];
+      }
+    }
+    return $files;
+  }
+
+
+
+  // Utility
+  
+  public function read($directory)
+  {
+    if( !is_string($directory) ) {
+      throw new Engine_Package_Manifest_Exception(sprintf('Directory is not a string, given "%s"', gettype($directory)));
+    }
+    if( !is_dir($this->getBasePath() . DIRECTORY_SEPARATOR . $directory) ) {
+      throw new Engine_Package_Manifest_Exception(sprintf('Directory "%s" is not a directory', $directory));
+    }
+
+    $this->_structure = self::build($this->getBasePath() . DIRECTORY_SEPARATOR . $directory);
+    $this->setPath($directory);
+
+    return $this;
+  }
+
+  public function addToArchive(Archive_Tar $archive)
+  {
+    if( $this->getAddDirectoryToArchive() ) {
+      $rval = $archive->addModify($this->getBasePath() . DIRECTORY_SEPARATOR . $this->getPath(), null, $this->getBasePath());
+      if( $archive->isError($rval) ) {
+        throw new Engine_Package_Manifest_Exception('Error in archive: ' . $rval->getMessage());
+      }
+    } else {
+      foreach( $this->getStructure() as $key => $value ) {
+        $fullpath = $this->getBasePath() . DIRECTORY_SEPARATOR . $this->getPath() . DIRECTORY_SEPARATOR . $value['path'];
+        if( is_dir($fullpath) ) continue;
+        $rval = $archive->addModify($fullpath, null, $this->getBasePath());
+        if( $archive->isError($rval) ) {
+          throw new Engine_Package_Manifest_Exception('Error in archive: ' . $rval->getMessage());
+        }
+      }
+    }
+  }
+}

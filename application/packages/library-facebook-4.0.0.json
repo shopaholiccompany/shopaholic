@@ -1,0 +1,59 @@
+{
+  "type": "library",
+  "name": "facebook",
+  "version": "4.0.0",
+  "revision": "6973",
+  "path": "application\/libraries\/Facebook",
+  "repository": null,
+  "meta": {
+    "date": "Thu, 16 Sep 2010 02:22:41 +0000",
+    "title": "Facebook API",
+    "description": null,
+    "developer": null,
+    "authors": [
+      "Webligo Developments"
+    ],
+    "changeLog": null
+  },
+  "dependencies": null,
+  "permissions": [
+    
+  ],
+  "actions": [
+    
+  ],
+  "callback": null,
+  "tests": null,
+  "structure": {
+    "application\/libraries\/Facebook": {
+      "type": "directory",
+      "path": "application\/libraries\/Facebook",
+      "structure": [
+        {
+          "path": "Exception.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 1506,
+          "sha1": "97bc3436b4b42512f7f0f7be5f4b3bd49bb145cf"
+        },
+        {
+          "path": "manifest.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 431,
+          "sha1": "ea3e6820e5331fe30f3cf9787d78fc15dd7a6112"
+        },
+        {
+          "path": "Api.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 19678,
+          "sha1": "74dc48d472666960185a68751c720711b474ea1c"
+        }
+      ]
+    }
+  }
+}

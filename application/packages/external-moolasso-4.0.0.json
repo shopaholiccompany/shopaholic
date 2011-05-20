@@ -1,0 +1,67 @@
+{
+  "type": "external",
+  "name": "moolasso",
+  "version": "4.0.0",
+  "revision": "6973",
+  "path": "externals\/moolasso",
+  "repository": null,
+  "meta": {
+    "date": "Thu, 16 Sep 2010 02:22:41 +0000",
+    "title": "Moolasso",
+    "description": null,
+    "developer": null,
+    "authors": [
+      "Webligo Developments"
+    ],
+    "changeLog": null
+  },
+  "dependencies": null,
+  "permissions": [
+    
+  ],
+  "actions": [
+    
+  ],
+  "callback": null,
+  "tests": null,
+  "structure": {
+    "externals\/moolasso": {
+      "type": "directory",
+      "path": "externals\/moolasso",
+      "structure": [
+        {
+          "path": "Lasso.js",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 7934,
+          "sha1": "2ce4f60bf80bf98c91511ce7c254763308185654"
+        },
+        {
+          "path": "manifest.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 404,
+          "sha1": "967886f71b92018b6a8d9f56822b7bc17b0451b7"
+        },
+        {
+          "path": "crop.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 329,
+          "sha1": "85a5c30dfd9be9f09412b7d4c24b050f8c6fa756"
+        },
+        {
+          "path": "Lasso.Crop.js",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 10187,
+          "sha1": "0937c8a69f9b9fd696ad4ee376382cd96a74b58a"
+        }
+      ]
+    }
+  }
+}
